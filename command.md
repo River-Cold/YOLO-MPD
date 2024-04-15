@@ -1,0 +1,1 @@
+python train.py --epochs 1 --batch-size 16 --weights None --device 0
