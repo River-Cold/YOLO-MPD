@@ -393,9 +393,9 @@ def img2label_paths(img_paths):
     sb, t = 'labels', []  # /images/, /labels/
     sa = ''
     for x in img_paths:
-        if 'visible' in x.split('\\'):
+        if 'visible' in x.split(os.sep):
             sa = 'visible'
-        elif 'infrared' in x.split('\\'):
+        elif 'infrared' in x.split(os.sep):
             sa = 'infrared'
 
         # print(f't:{t}')
@@ -926,6 +926,7 @@ class LoadMultiModalImagesAndLabels(Dataset):  # for training/testing
             except Exception as e:
                 nc += 1
                 print(f'{prefix}WARNING: Ignoring corrupted image and/or label {im_file}: {e}')
+
 
             pbar.desc = f"{prefix}Scanning '{path.parent / path.stem}' images and labels... " \
                         f"{nf} found, {nm} missing, {ne} empty, {nc} corrupted"

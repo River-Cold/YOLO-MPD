@@ -10,11 +10,11 @@
 download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-path: F:/code/dataset/kaist
-train_rgb: F:/code/dataset/kaist/visible/train/  # 128 images
-val_rgb: F:/code/dataset/kaist/visible/test/  # 128 images
-train_ir: F:/code/dataset/kaist/infrared/train/  # 128 images
-val_ir: F:/code/dataset/kaist/infrared/test/  # 128 images
+path: F:/code/dataset/KAIST
+train_rgb: F:/code/dataset/KAIST/visible/train/  # 128 images
+val_rgb: F:/code/dataset/KAIST/visible/test/  # 128 images
+train_ir: F:/code/dataset/KAIST/infrared/train/  # 128 images
+val_ir: F:/code/dataset/KAIST/infrared/test/  # 128 images
 
 # number of classes
 nc: 1
